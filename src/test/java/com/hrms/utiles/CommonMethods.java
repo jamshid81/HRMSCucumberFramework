@@ -33,6 +33,11 @@ public class CommonMethods extends PageInitializer {
 		element.clear();
 		element.sendKeys(text);
 	}
+	public static void clickOnSubMenu(WebElement el1, WebElement el2, WebElement el3) {
+		el1.click();
+		el2.click();
+		el3.click();
+	}
 
 	/**
 	 * Method checks if radio/checkbox is enabled and clicks it
