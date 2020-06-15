@@ -34,8 +34,9 @@ public class AddEmpQualificationPage extends CommonMethods {
 	
 	@FindBy(linkText="Qualifications")
 	public WebElement Qualification;
-	@FindBy(xpath="//tr[@class='odd']/td")
-	public List<WebElement> licenseVerification;
+	
+	@FindBy(linkText="AWS Certification")
+	public WebElement licenseVerification;
 
 	@FindBy(id = "addLicense")
 	public WebElement addLicenseBtn;

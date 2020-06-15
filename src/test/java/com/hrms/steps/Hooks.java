@@ -17,9 +17,9 @@ public class Hooks {
 
 		byte[] screenshot;
 		if (scenario.isFailed()) {
-			screenshot = CommonMethods.takeScreenshot("faildTest" + scenario.getName());
+			screenshot = CommonMethods.takeScreenshot("faildTest/" + scenario.getName());
 		} else {
-			screenshot = CommonMethods.takeScreenshot("passedTest" + scenario.getName());
+			screenshot = CommonMethods.takeScreenshot("passedTest/" + scenario.getName());
 		}
 		scenario.attach(screenshot, "image/png", scenario.getName());
 		BaseClass.tearDown();

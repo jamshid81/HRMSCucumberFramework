@@ -12,11 +12,12 @@ import io.cucumber.junit.CucumberOptions;
 			dryRun=false,
 			monochrome=true,
 			strict = false,
-			tags ="@regression",
+			tags ="@test",
 			plugin = { 
 					"pretty", // prints gherkin steps in console
 					"html:target/cucumber-default-report", // create basic html report in specified location
-					"json:target/cucumber.json" }
+					"json:target/cucumber.json",
+					"rerun:target/failed.txt"}
 	)
 public class TestRunner {
 

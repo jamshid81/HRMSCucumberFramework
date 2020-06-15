@@ -33,10 +33,28 @@ public class CommonMethods extends PageInitializer {
 		element.clear();
 		element.sendKeys(text);
 	}
-	public static void clickOnSubMenu(WebElement el1, WebElement el2, WebElement el3) {
-		el1.click();
-		el2.click();
-		el3.click();
+	/**
+	 * Method that click two Button
+	 * @param Click On First Btn
+	 * @param ClickOn Second Btn
+	 */
+	public static void towBtnClick(WebElement ClickOnFirstElement, WebElement ClickOnSecondElement) {
+		
+		ClickOnFirstElement.click();
+		ClickOnSecondElement.click();
+	}
+	
+	/**
+	 * Method that click on three Button one after the other
+	 * this methods will condense multiple click steps
+	 * @param Click On First Btn
+	 * @param Click On Second Btn
+	 * @param click On Third Btn
+	 */
+	public static void multipleBtnClick(WebElement ClickOnFirstElement, WebElement ClickOnSecondElement, WebElement ClickOnThirdElement) {
+		ClickOnFirstElement.click();
+		ClickOnSecondElement.click();
+		ClickOnThirdElement.click();
 	}
 
 	/**
