@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 
 	features="src/test/resources/features",
 	glue="com/hrms/steps",
-	dryRun=true,
+	dryRun=false,
 	monochrome=true,
 	strict=false,
 	tags="@smoke",
